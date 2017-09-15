@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	-->
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+	
+
+	<script src="./scripts/gahez.system.js"></script>
+
+	<!-- jquery mobile -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>    
+<body onload="loader()">
+
+<!-- ---- Login Page ---- -->	
+<div data-role="page" id="PageLogin" w3-include-html="pages/page1.html">
+	
+
+	<!-- popup Errors -->
+	<!--
+		these two popups fired incase 
+		1- No internet connection
+		2- No Server connection
+		3- include them in all pages
+	-->
+	<div data-role="popup" id="popDNoServer" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>Server Down</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">Server Down Try To Reconnect .....</p>	        
+	    </div>
+	</div>	
+	<div data-role="popup" id="popDNoInternet" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>No Internet Connection</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your internet connection</p>	        
+	    </div>
+	</div>
+	<div data-role="popup" id="popDNoGeoLocation" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1> Activate GPS</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your GPS </p>	        
+	    </div>
+	</div>
+	<!-- / popup Errors -->
+	
+	
+	<div data-role="header">
+		<h1>Gahez</h1>
+	</div><!-- /header -->
+	 
+	<div data-role="content">
+		<form id="loginForm">  
+		<p>Username</p>
+		<p><input type="text" name="loginUsername"></p>
+		<p>Password</p>
+		<p><input type="password" name="loginPassword"></p>
+		<input type="submit" value="Login" id="BtnLogin">
+		</form>
+	</div><!-- /content -->  
+
+	    
+
+</div>
+<!-- ---- / Login Page ---- -->
+
+<!---------------Category Select Page------------------------------------------------- -->	
+<div data-role="page" id="PageSelect">
+	
+	<!-- popup Errors -->
+	<!--
+		these two popups fired incase 
+		1- No internet connection
+		2- No Server connection
+		3- include them in all pages
+	-->
+	<div data-role="popup" id="popDNoServer" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>Server Down</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">Server Down Try To Reconnect .....</p>	        
+	    </div>
+	</div>	
+	<div data-role="popup" id="popDNoInternet" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>No Internet Connection</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your internet connection</p>	        
+	    </div>
+	</div>
+	<div data-role="popup" id="popDNoGeoLocation" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1> Activate GPS</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your GPS </p>	        
+	    </div>
+	</div>
+	<!-- / popup Errors -->
+
+
+	<div data-role="panel" id="PanelMain2">
+    	Panel Content
+	</div><!-- /panel -->
+
+	<div data-role="header">
+		<h1>Select Cat Page</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<p>select cat Page content goes here.</p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!---------------Map Page------------------------------------------------- -->	
+<div data-role="page" id="PageMap">
+	
+	<!-- popup Errors -->
+	<!--
+		these two popups fired incase 
+		1- No internet connection
+		2- No Server connection
+		3- include them in all pages
+	-->
+	<div data-role="popup" id="popDNoServer" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>Server Down</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">Server Down Try To Reconnect .....</p>	        
+	    </div>
+	</div>	
+	<div data-role="popup" id="popDNoInternet" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1>No Internet Connection</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your internet connection</p>	        
+	    </div>
+	</div>
+	<div data-role="popup" id="popDNoGeoLocation" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+	    <div data-role="header" data-theme="a">
+	    <h1> Activate GPS</h1>
+	    </div>
+	    <div role="main" class="ui-content">
+	        <h3 class="ui-title">please check your GPS </p>	        
+	    </div>
+	</div>
+	<!-- / popup Errors -->
+
+	
+	
+	<div data-role="panel" id="PanelMain" data-position="left" data-display="push">
+    Panel Content
+	</div><!-- /panel -->
+
+	<div data-role="header">
+		<h1>Map Displaying</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+		<p>Map Page content goes here.</p>
+		<a  href="#PanelMain">Click</a>
+	</div><!-- /content -->
+
+
+</div><!-- /page -->
+
+
+
+	<script type="text/javascript">
+		
+		function loader(){
+			var tUpdatePosition;
+			system = System.getInstance();
+			system.init();			
+			
+			//tUpdatePosition = setInterval(system.updatePosition, 5000);
+		}
+
+	</script>	
+	<script src="./scripts/gahez.actions.js"></script>
+	
+</body>
+</html>
