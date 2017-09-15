@@ -1,0 +1,15 @@
+{
+  "name": "gahez-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gahez-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Gahez"
+  },
+  "author": "Mohamed Said",
+  "license": "ISC"
+}
